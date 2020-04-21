@@ -1,0 +1,32 @@
+{
+  "name": "test-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "babel ./src --out-dir dist",
+    "clean": "rimraf dist"
+  },
+  "author": "Karamat Ullah",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/register": "^7.9.0",
+    "apisauce": "^1.1.1",
+    "local-storage": "^2.0.0",
+    "localforage": "^1.7.3",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "rimraf": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
